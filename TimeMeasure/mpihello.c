@@ -32,6 +32,7 @@ int main(int argc, char** argv) {
   if (world_rank == 0) { /* use time on master node */
     printf("Runtime = %f seconds\n", end-start);
   }
+  /* MPI Finalize */
   
   MPI_Finalize();
 }
